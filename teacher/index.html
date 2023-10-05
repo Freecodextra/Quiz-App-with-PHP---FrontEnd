@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ================ BOOTSTRAP CDN -================= -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- ============ BOOTSTRAP ICON CDN ===========================-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- =================== JQUERY CDN ======================= -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="../public/style.css">
+  <title>Admin - Quiz App</title>
+</head>
+<body>
+  <!-- ======================= HEADER ========================= -->
+    <div class="page-content">
+    <header class="shadow-sm">
+      <div class="header-logo">
+        <div class="dash"><i class="bi bi-border-width"></i></div>
+        <div class="logo">CodeXtra</div>
+      </div>
+      <div class="extra">
+        <div class="profile">
+          <i class="bi bi-person"></i>
+          <div class="accounts">
+            <div class="account acccount-profile d-flex align-items-center">
+              <i class="bi bi-person"></i>
+              <span>Profile</span>
+            </div>
+            <div class="account account-setting d-flex align-items-center">
+              <i class="bi bi-gear"></i>
+              <span>Settings</span>
+            </div>
+            <div class="account account-logout d-flex align-items-center">
+              <i class="bi bi-box-arrow-right"></i>
+              <span>Logout</span>
+            </div>
+          </div>
+        </div>
+        <div class="notification">
+          <i class="bi bi-bell"></i>
+          <div class="card">
+            <div class="card-header">Notifications</div>
+            <div class="card-body">
+              <div class="notes">
+                <div class="note d-flex align-items-center">
+                  <div class="note-icon"><span class="badge bg-warning">NEW</span></div>
+                  <div class="note-body">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores harum voluptates, amet doloribus officia numquam velit at.
+                  </div>
+                </div>
+                <hr>
+                <div class="note d-flex align-items-center">
+                  <div class="note-icon"><span class="badge bg-warning">NEW</span></div>
+                  <div class="note-body">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores harum voluptates, amet doloribus officia numquam velit at.
+                  </div>
+                  <hr>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer text-center"><span>Dismiss</span></div>
+          </div>
+        </div>
+        <div class="mode">
+          <i class="bi bi-moon hide"></i>
+          <i class="bi bi-brightness-high-fill"></i>
+        </div>
+      </div>
+    </header>
+    <!-- ===================== SIDE NAVIGATION ======================== -->
+    <nav class="shadow-sm nav-collapse">
+      <div class="nav-logo">
+        <div class="logo">CodeXtra</div>
+      </div>
+      <hr>
+      <div class="nav-header">
+        <div class="nav-text">
+          <h5><strong>Odunayo Joseph</strong></h5>
+          <h6>Teacher</h6>
+        </div>
+      </div>
+      <div class="nav-body">
+        <div class="links">
+          <ul>
+            <a href="">
+              <li>
+                <div class="link">
+                  <div class="icon">
+                    <i class="bi bi-columns-gap"></i>
+                  </div>
+                  <p>Dashboard</p>
+            </div>
+          </li>
+          </a>
+        <a href="javascript:void(0)">
+          <li>
+            <div class="link drop-btn course">
+              <div class="icon">
+                <i class="bi bi-mortarboard"></i>
+              </div>
+              <p>Courses</p>
+              <span><i class="bi bi-chevron-down"></i></span>
+        </div>
+      </li>
+      </a>
+          <div class="drop-down course">
+            <ul>
+              <a href="">
+                <li>
+                  <div class="link">
+                    <div class="icon">
+                      <i class="bi bi-mortarboard"></i>
+                    </div>
+                    <p>MATH 101</p>
+              </div>
+            </li>
+            </a>
+            <a href="">
+              <li>
+                <div class="link">
+                  <div class="icon">
+                    <i class="bi bi-mortarboard"></i>
+                  </div>
+                  <p>CHEN 112</p>
+            </div>
+          </li>
+          </a>             
+          <a href="">
+            <li>
+              <div class="link">
+                <div class="icon">
+                  <i class="bi bi-mortarboard"></i>
+                </div>
+                <p>GEO 103</p>
+          </div>
+        </li>
+        </a>
+            </ul>
+          </div>
+          <a href="javascript:void(0)">
+            <li>
+              <div class="link drop-btn class">
+                <div class="icon">
+                  <i class="bi bi-book"></i>
+                </div>
+                <p>Classes</p>
+                <span><i class="bi bi-chevron-down"></i></span>
+          </div>
+        </li>
+        </a>
+            <div class="drop-down class">
+              <ul>
+                <a href="">
+                  <li>
+                    <div class="link">
+                      <div class="icon">
+                        <i class="bi bi-book"></i>
+                      </div>
+                      <p>100 Level</p>
+                </div>
+              </li>
+              </a>
+              <a href="">
+                <li>
+                  <div class="link">
+                    <div class="icon">
+                      <i class="bi bi-book"></i>
+                    </div>
+                    <p>200 Level</p>
+              </div>
+            </li>
+            </a>             
+              </ul>
+            </div>
+          <a href="">
+            <li>
+              <div class="link">
+                <div class="icon">
+                  <i class="bi bi-gear"></i>
+                </div>
+                <p>Settings</p>
+          </div>
+        </li>
+        </a>
+          <a href="">
+            <li>
+              <div class="link">
+                <div class="icon">
+                  <i class="bi bi-box-arrow-right"></i>
+                </div>
+                <p>Logout</p>
+          </div>
+        </li>
+        </a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ======================== MAIN CONTENT ===================== -->
+    <main>
+      <div class="admin">
+        <div class="dashboard container-fluid">
+          <div class="summary">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="icon">
+                  <i class="bi bi-people"></i>
+                </div>
+                <div class="number">
+                  <h2>100</h2>
+                </div>
+                <div class="text">
+                  <p>Total Students</p> 
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="icon">
+                  <i class="bi bi-mortarboard"></i>
+                </div>
+                <div class="number">
+                  <h2>100</h2>
+                </div>
+                <div class="text">
+                  <p>Total CLasses</p> 
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="icon">
+                  <i class="bi bi-mortarboard"></i>
+                </div>
+                <div class="number">
+                  <h2>100</h2>
+                </div>
+                <div class="text">
+                  <p>Total Courses</p> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="course-overview">
+        <div class="row shadow-sm">
+            <div class="head">
+              <div class="head-name">
+                <p>Course Overview</p>
+              </div>
+              <div class="head-input">
+                <select name="course" id="">
+                  <option value="CHEM 101">CHEM 101</option>
+                  <option value="BIOL 111">BIOL 111</option>
+                  <option value="PHYS 131">PHYS 131</option>
+                  </select>
+              </div>
+            </div>
+            <div class="body">
+              <div class="row">
+                <div class="col-sm-3 first">
+                  <div class="icon">
+                    <i class="bi bi-people"></i>
+                  </div>
+                  <div class="text">
+                    <p>Number of students</p>
+                    <p>204</p>
+                  </div>
+                </div>
+                <div class="col-sm-3 second">
+                  <div class="icon">
+                    <i class="bi bi-people"></i>
+                  </div>
+                  <div class="text">
+                    <p>Number of topics</p>
+                    <p>204</p>
+                  </div>
+                </div>
+                <div class="col-sm-3 third">
+                  <div class="icon">
+                    <i class="bi bi-people"></i>
+                  </div>
+                  <div class="text">
+                    <p>Number of quizes</p>
+                    <p>204</p>
+                  </div>
+                </div>
+                <div class="col-sm-3 fourth">
+                  <div class="icon">
+                    <i class="bi bi-people"></i>
+                  </div>
+                  <div class="text">
+                    <p>Number of exercies</p>
+                    <p>204</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+        <div class="mainboard">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="mainboard-head">
+                <h5>Daily Statistics</h5>
+              </div>
+              <div class="mainboard-body">
+                <!-- <div class="one">
+                  <div class="img">
+                    <img src="../images/course.png" alt="">
+                  </div>
+                  <div class="text">
+                    <h6>CHEM 101 - Introduction to inorganic chemistry</h6>
+                    <p>100 level</p>
+                  </div>
+                </div> -->
+                <div id="myChart1" style="min-width:450px; height:400px"></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="mainboard-head">
+                <h5>Total Number Of Students</h5>
+              </div>
+              <div class="mainboard-body">
+                <div id="myChart2" style="min-width:450px; height:400px"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+    </div>
+    <footer>
+      <div class="footer-text">
+        Copyrights Ⓒ 2022 All Rights reserved | Design By <a href="http://wa.me/2349016242310">CodeXtra</a>
+        </div>
+        <div class="footer-icons">
+          <a href="http://facebook.com/insideabucampus">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="http://twitter.com/insideabucampus">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a href="http://instagram.com/insideabucampus">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+    </footer>
+    <script src="../public/app.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+      // ====================PIE CHART===========================
+      google.charts.load('current',{packages:['corechart']});
+      google.charts.setOnLoadCallback(drawChart1);
+      function drawChart1() {
+var data = google.visualization.arrayToDataTable([
+  ['Students', 'Number'],
+  ['Male',54.8],
+  ['Female',48.6],
+]);
+
+var options = {
+  title:'Total Number Of Students',
+  is3D:true
+};
+
+var chart = new google.visualization.PieChart(document.getElementById('myChart2'));
+  chart.draw(data, options);
+}
+ // ====================LINE CHART===========================
+ google.charts.load('current',{packages:['corechart']});
+ google.charts.setOnLoadCallback(drawChart2);
+ function drawChart2() {
+// Set Data
+var data = google.visualization.arrayToDataTable([
+  ['Days', 'Number'],
+  ['Sun',7],
+  ['Mon',8],
+  ['Tue',8],
+  ['Wed',9],
+  ['Thur',9],
+  ['Fri',9],
+  ['Sat',10]
+  ]);
+// Set Options
+var options = {
+  title: 'Login Users Daily',
+  hAxis: {title: 'Days Of The Week'},
+  vAxis: {title: 'Square Meters'},
+  legend: 'none'
+};
+// Draw Chart
+var chart = new google.visualization.LineChart(document.getElementById('myChart1'));
+chart.draw(data, options);
+}
+    </script>
+</body>
+</html>

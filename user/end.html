@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ================ BOOTSTRAP CDN -================= -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- ============ BOOTSTRAP ICON CDN ===========================-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- =================== JQUERY CDN ======================= -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="../public/style.css">
+  <title>Result - Quiz App</title>
+</head>
+<body>
+  <!-- ======================= HEADER ========================= -->
+    <div class="page-content">
+    <header class="shadow-sm">
+      <div class="header-logo">
+        <div class="dash"><i class="bi bi-border-width"></i></div>
+        <div class="logo">CodeXtra</div>
+      </div>
+      <div class="extra">
+        <div class="profile">
+          <i class="bi bi-person"></i>
+          <div class="accounts">
+            <div class="account acccount-profile d-flex align-items-center">
+              <i class="bi bi-person"></i>
+              <span>Profile</span>
+            </div>
+            <div class="account account-setting d-flex align-items-center">
+              <i class="bi bi-gear"></i>
+              <span>Settings</span>
+            </div>
+            <div class="account account-logout d-flex align-items-center">
+              <i class="bi bi-box-arrow-right"></i>
+              <span>Logout</span>
+            </div>
+          </div>
+        </div>
+        <div class="notification">
+          <i class="bi bi-bell"></i>
+          <div class="card">
+            <div class="card-header">Notifications</div>
+            <div class="card-body">
+              <div class="notes">
+                <div class="note d-flex align-items-center">
+                  <div class="note-icon"><span class="badge bg-warning">NEW</span></div>
+                  <div class="note-body">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores harum voluptates, amet doloribus officia numquam velit at.
+                  </div>
+                </div>
+                <hr>
+                <div class="note d-flex align-items-center">
+                  <div class="note-icon"><span class="badge bg-warning">NEW</span></div>
+                  <div class="note-body">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores harum voluptates, amet doloribus officia numquam velit at.
+                  </div>
+                  <hr>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer text-center"><span>Dismiss</span></div>
+          </div>
+        </div>
+        <div class="mode">
+          <i class="bi bi-moon hide"></i>
+          <i class="bi bi-brightness-high-fill"></i>
+        </div>
+      </div>
+    </header>
+    <!-- ===================== SIDE NAVIGATION ======================== -->
+    <nav class="shadow-sm nav-collapse">
+      <div class="nav-logo">
+        <div class="logo">CodeXtra</div>
+      </div>
+      <hr>
+      <div class="nav-header">
+        <div class="nav-text">
+          <h5><strong>Odunayo Joseph</strong></h5>
+          <h6>Student</h6>
+        </div>
+      </div>
+      <div class="nav-body">
+        <div class="links">
+          <ul>
+            <a href="">
+              <li>
+                <div class="link">
+                  <div class="icon">
+                    <i class="bi bi-columns-gap"></i>
+                  </div>
+                  <p>Dashboard</p>
+            </div>
+          </li>
+          </a>
+        <a href="javascript:void(0)">
+          <li>
+            <div class="link drop-btn">
+              <div class="icon">
+                <i class="bi bi-mortarboard"></i>
+              </div>
+              <p>Courses</p>
+              <span><i class="bi bi-chevron-down"></i></span>
+        </div>
+      </li>
+      </a>
+          <div class="drop-down">
+            <ul>
+              <a href="">
+                <li>
+                  <div class="link">
+                    <div class="icon">
+                      <i class="bi bi-mortarboard"></i>
+                    </div>
+                    <p>MATH 101</p>
+              </div>
+            </li>
+            </a>
+            <a href="">
+              <li>
+                <div class="link">
+                  <div class="icon">
+                    <i class="bi bi-mortarboard"></i>
+                  </div>
+                  <p>CHEN 112</p>
+            </div>
+          </li>
+          </a>             
+          <a href="">
+            <li>
+              <div class="link">
+                <div class="icon">
+                  <i class="bi bi-mortarboard"></i>
+                </div>
+                <p>GEO 103</p>
+          </div>
+        </li>
+        </a>
+            </ul>
+          </div>
+          <a href="">
+            <li>
+              <div class="link">
+                <div class="icon">
+                  <i class="bi bi-gear"></i>
+                </div>
+                <p>Settings</p>
+          </div>
+        </li>
+        </a>
+          <a href="">
+            <li>
+              <div class="link">
+                <div class="icon">
+                  <i class="bi bi-box-arrow-right"></i>
+                </div>
+                <p>Logout</p>
+          </div>
+        </li>
+        </a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ======================== MAIN CONTENT ===================== -->
+    <main>
+        <div class="quiz">
+            <div class="quiz-head">
+              <h4>CHEM 101 - Introduction To Inorganic chemistry</h4>
+              </div>
+              </div>
+        <div class="overview">
+            <div class="overview-head">
+                <h3>Summary Of attempt</h3>
+            </div>
+            <div class="overview-body">
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                        <th>Question</th>
+                         <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>1</td>
+                        <td>attempted</td>
+                        </tr>
+                        <tr>
+                        <td>2</td>
+                        <td>Not Yet Attempted</td>
+                        </tr>
+                        <td>3</td>
+                        <td>Not Yet Attempted</td>
+                        </tr>
+                        <td>4</td>
+                        <td>Not Yet Attempted</td>
+                        </tr>
+                        <td>5</td>
+                        <td>Not Yet Attempted</td>
+                        </tr>
+                        <td>6</td>
+                        <td>Attempted</td>
+                        </tr>
+                        <td>7</td>
+                        <td>Not Yet Attempted</td>
+                        </tr>
+                        <td>8</td>
+                        <td>Attempted</td>
+                        </tr>
+                        <td>9</td>
+                        <td>Not Yet Attempted</td>
+                        </tr>
+                        <td>10</td>
+                        <td>Attempted</td>
+                        </tr>
+                        <td>11</td>
+                        <td>Not Yet Attempted</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">
+                                <form action="" method="post">
+                                    <button class="btn btn-info">Return</button>
+                                    <button class="btn btn-warning">Submit</button>
+                                </form>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </main>
+    </div>
+    <footer>
+      <div class="footer-text">
+        Copyrights Ⓒ 2022 All Rights reserved | Design By <a href="http://wa.me/2349016242310">CodeXtra</a>
+        </div>
+        <div class="footer-icons">
+          <a href="http://facebook.com/insideabucampus">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="http://twitter.com/insideabucampus">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a href="http://instagram.com/insideabucampus">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+    </footer>
+    <script src="../public/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="head1">Input 1 checked</h1>
+    <h1 class="head2">Input 2 checked</h1>
+        <input onchange="handleChange()" type="radio" name="choose" id="a" class="choose" value="choose1"> 
+        <label for="a">Add To New Folder</label> 
+        <input onchange="handleChange()"type="radio" class="choose"name="choose" id="b" value="choose2"> 
+        <label for="b">Add To Existing Folder</label> 
+        <button onclick="clickMe()">Click Me</button>
+</body>
+<script>
+    let radioInput1 = document.getElementById('a');
+    let radioInput2 = document.getElementById('b');
+    let head1 = document.querySelector(".head1");
+    let head2 = document.querySelector(".head2");
+      
+    
+      function handleChange() {
+        if (radioInput1.checked) {
+            head1.style.display = "block";
+            head2.style.display = "none";
+        } else if (radioInput2.checked) {
+            head1.style.display = "none";
+            head2.style.display = "block";
+        }
+      }
+      function clickMe() {
+        console.log(radioInput1.checked);
+     }
+</script>
+</html>
